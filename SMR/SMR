@@ -1,0 +1,15 @@
+#!/bin/bash
+mkdir -p res
+for i in {11..11}
+do 
+./smr \
+--bfile ./1kg.v3/EAS \
+--gwas-summary SP2_SM.d18.2.22.0.txt \
+--beqtl-summary Jappan_1405eQTL  \
+--maf 0.01 \
+--diff-freq-prop 0.92 \
+--diff-freq 0.99 \
+--out res/SP$i \
+--smr-multi \
+--thread-num 100 
+done 
