@@ -1,0 +1,11 @@
+# !/bin/bash
+
+./gcta64 \
+--bfile ./all_without_miss \
+--fastGWA-lr \
+--pheno pheno.txt \
+--qcovar qc_covar.txt \
+--covar bin_covar.txt \
+--thread-num 100 \
+--maf 0.01 \
+--out GWAS_glucose
