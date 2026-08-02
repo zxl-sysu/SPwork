@@ -1,0 +1,1 @@
+./smr-1.3.1-win.exe  --beqtl-summary "./Jappan_1405eQTL" --extract-probe probe  --query 1e-5 --out myquery
